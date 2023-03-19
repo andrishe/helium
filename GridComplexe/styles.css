@@ -1,0 +1,35 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "pal pal san"
+    "sla sky san"
+    "sla pin pin";
+    gap: 10px;
+    
+}
+div:nth-child(1){
+    background: palegreen;
+    grid-area: pal;
+
+}
+div:nth-child(2){
+    background: sandybrown;
+    grid-area: san;
+}
+div:nth-child(3){
+background: skyblue;
+grid-area: sky;
+}
+div:nth-child(4){
+background: slateblue;
+grid-area: sla;
+}
+div:nth-child(5){
+    background: pink;
+    grid-area: pin;
+}
+
+   

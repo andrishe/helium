@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Kanit";
+    src: url(/CoursCSS/assets/fonts/Kanit-Regular.ttf)
+}
+
+/* l'étoile donne du style  tous les élements*/
+*{
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-family: "Kanit" ,serif;
+    background: url(/CoursCSS/assets/img/back.jpg) center/cover;
+    /* vh = 100% de la taille de lécran de l'utulisateur*/
+    min-height: 100vh;
+}
+h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow:1px 2px 3px #ffffff7a;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    margin: 30Px;
+}
+main {
+    min-height: 500px;
+    width: 90%;
+    background: #e4e2e2ce;
+    /* centrer une une boite */
+    margin: 0 auto;
+    border: 2px slodid rgb(137, 0, 0);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgb(98, 175, 100);
+    padding: 20px 30px  20px 30px ;
+  
+}
+
+.flexbox, .grid, .absolute{
+    border: 2px solid rgb(98, 175, 100);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    min-height: 150px;
+}
+/* flezxbox*/
+.flexbox ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.flexbox li{
+    list-style: none;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    background: rgb(98, 175, 100);
+  /*centrer un unique et element verticalment et horizontalement*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* grid*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+.grid img{
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "i1 i2"
+    "txta txta"
+    "vide btn";
+}
+
+input, textarea{
+    margin: 5px;
+    border: 1px solid rgb(98, 175, 100) ;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: "Kanit" ,serif;
+    border-radius: 10px;
+}
+
+
+textarea {
+grid-area: txta;
+height: 40px;
+resize: none;
+
+}
+#btn-submit{
+    grid-area: btn;
+    cursor: pointer;
+    background: rgb(98, 175, 100);
+    color: #fff;
+    transition: 0.2s;
+}
+#btn-submit:hover{
+    background: #52ee89;
+}
+/* Absolute */
+/* Il faut mettre une position relative au parent pour contraindre l'élément en absolute dans ses frontières
+ Sans élément en RElative, de base, l'élément en absolute l'est par rapport au body*/
+.absolute{
+    position: relative;
+}
+#circle1{
+    height: 80px;
+    width: 80px;
+    background: rgb(175, 98, 98);
+    position: absolute;
+    border-radius: 150px;
+    top: -20px;
+    right: -20px;
+}
+#circle2{
+    height: 40px;
+    width: 40px;
+    border-radius: 150px;
+    background: #52ee89;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 100px;
+}
+
+/* Responsive */
+@media screen and (max-width: 995px) {
+   .grid-container{
+    display: block;
+    justify-content: space-between;
+   }
+   .grid img{
+    width: 40%;
+   }
+    
+}
+@media screen and (max-width:705px) {
+    .flexbox ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    form{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "i1" 
+        "i2"
+        "txta"
+        "btn";
+    }
+    h1{
+        font-size: 2rem;
+    }
+  
+    @media screen and (max-width: 417px) {
+        input, textarea {
+            font-size: 0.8rem;
+        }
+        h1 {
+            font-size: 1.5rem;
+        }
+
+    }
+}

@@ -1,0 +1,145 @@
+*{
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: var(--color1);
+}
+.logo{
+    font-size: 2.2rem;
+    color:var(--color4);
+}
+
+/* Navbar */
+.logo span{
+    color:var(--color2);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: var(--color1);
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    list-style: none;
+   
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--color2);
+}
+nav ul li a:hover{
+    color: var(--color5);
+}
+
+/* Container */
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+  
+}
+.header-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.header-right{
+   width: 50%;
+}
+#img-right{
+    width: 100%;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--color4);
+    padding-bottom: 10px;
+}
+h1 span{
+    color: var(--color3);
+}
+.subtitle{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color5);
+    padding-bottom: 10px;
+}
+p{
+    font-size: 0.9rem;
+    color: var(--color2);
+   
+}
+/* Pied de pages */
+.infos{
+    background: var(--color6);
+    border-radius: 10px;
+    display: flex;
+}
+.infos-left{
+    width: 33%;
+}
+.infos h3{
+    color: var(--color2);
+    padding-bottom: 10px;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ 
+}
+button{
+   border: none;
+   background: var(--color4);
+   color: var(--color3);
+   width: 150px;
+   padding: 10px 0;
+   margin: 5px;
+   border-radius: 10px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   
+}
+button:hover{
+    cursor: pointer;
+    background: var(--color5);
+    color: var(--color6);
+}
+.header-right{
+    width: 67%;
+}
+.investors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+ .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+   
+ }
+.img-container img{
+    height: 60px;
+   
+}
+
+
+Réunion d'information 19 décembre
+Venez à notre à notre rencontre lors de cette réunion
+              d'information. Témoignages des étudiants/Ateliers sur la
+              pédagogies par projet "Active Learning by Gaming Campus"/
+              Découverte des locaux/Rencontre avec l'équipe pédagogique/Question
+              répopnses

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <h3>pa<span>radise</span></h3>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li><a href="#">home</a></li>
+
+            <li><a href="#">rooms</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">gallery</a></li>
+            <li><a href="#">reservation</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="header-container">
+        <h1>Hotel paradise</h1>
+        <button>booking</button>
+      </div>
+    </header>
+
+    <form class="booking">
+      <div class="booking-container">
+        <div class="number-1">
+          <label for="adult">Adults</label>
+          <input type="number" id="adult" name="total_adults" />
+        </div>
+        <div class="number-2">
+          <label for="child">Children</label>
+          <input type="number" id="child" name="total_children" />
+        </div>
+        <div class="date-in">
+          <label for="checkin-date">Check-in Date</label>
+          <input type="date" id="checkin-date" name="checkin" required />
+        </div>
+        <div class="date-out">
+          <label for="checkout-date">Check-out Date</label>
+          <input type="date" id="checkout-date" name="checkout" required />
+        </div>
+
+        <button type="submit">Booking</button>
+      </div>
+    </form>
+
+    <section>
+      <div class="about-container">
+        <div class="about-text">
+          <h2>about <span>us</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            velit maxime distinctio doloribus quasi, explicabo hic veritatis?
+            Natus consequatur omnis voluptatum deleniti ipsa totam explicabo.
+            Dicta, vitae nobis doloribus voluptas veniam similique vero
+            temporibus amet! Iure, est aliquam! Magnam, quibusdam!
+          </p>
+        </div>
+        <div class="about-img"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="service-container">
+        <h2>our <span>service</span></h2>
+        <div class="service-main">
+          <div class="service">
+            <i class="fa-solid fa-hotel"></i>
+            <h4>rooms</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              sed temporibus alias saepe error facere labore nobis similique
+              placeat iste.
+            </p>
+          </div>
+
+          <div class="service">
+            <i class="fa-solid fa-utensils"></i>
+            <h4>restaurant</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              sed temporibus alias saepe error facere labore nobis similique
+              placeat iste.
+            </p>
+          </div>
+          <div class="service">
+            <i class="fa-solid fa-dumbbell"></i>
+            <h4>spa & fitness</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              sed temporibus alias saepe error facere labore nobis similique
+              placeat iste.
+            </p>
+          </div>
+          <div class="service">
+            <i class="fa-solid fa-dumbbell"></i>
+            <h4>spa & fitness</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              sed temporibus alias saepe error facere labore nobis similique
+              placeat iste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
